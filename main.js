@@ -14,7 +14,7 @@ function main() {
     helperCanvas = document.getElementById("helperCanvas"); // Getting canvas
     helperContext = helperCanvas.getContext("2d"); // Creating context
     source = document.createElement("img"); // Creating a image element
-    source.src = "https://cdn.pixabay.com/photo/2023/09/04/06/59/dog-8232158_1280.jpg";
+    source.src = "./puzzle.jpg";
     source.onload= function() {
         addEventListeners();
     
