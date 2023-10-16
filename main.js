@@ -17,16 +17,10 @@ function main() {
     source.src = "./puzzle.jpg";
     source.onload= function() {
         addEventListeners();
-    
-        // IMAGE
-        handleResize();
-    
-        // COUNT OF PIECES  
         initializePieces(size.rows, size.cols);
-        
+        handleResize();
         randomizePieces();
         window.addEventListener("resize", handleResize);
-        
         updateCanvas();
     }
 }
