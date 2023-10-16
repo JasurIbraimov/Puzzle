@@ -17,8 +17,9 @@ function main() {
     source.src = "./puzzle.jpg";
     source.onload= function() {
         addEventListeners();
-        initializePieces(size.rows, size.cols);
         handleResize();
+        initializePieces(size.rows, size.cols);
+        
         randomizePieces();
         window.addEventListener("resize", handleResize);
         updateCanvas();
